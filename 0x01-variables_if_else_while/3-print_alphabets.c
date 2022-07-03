@@ -1,24 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
-/* main - entry point */
-/* Return: always 0 */
-
+/**
+ * main - Entry point
+ * Return: 0 (Success)
+ */
 int main(void)
 {
-	char lower = "a";
+	char a, b;
 
-	while (lower <= "z")
-	{	putchar(lower);
-		lower++;
-	}
-	char upper = "A";
-
-	while (upper <= "Z")
+	for (a = 97; a <= 122; a++)
 	{
-		putchar (upper);
-		upper++;
+		putchar(a);
 	}
-	putchar("\n");
+	for (b = 65; b <= 90; b++)
+	{
+		putchar(b);
+	}
+	putchar('\n');
 	return (0);
 }
 
