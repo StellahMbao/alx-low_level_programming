@@ -1,17 +1,20 @@
 #include <stdio.h>
-/*Main - Entry point*/
-/*Return: 0 */
+#include <stdlib.h>
 
+/**
+ * main - Entry point
+ * prints all digits of base 10
+ * Return: 0 (Success)
+ */
 int main(void)
 {
 	int i;
 
-	while (i < 10)
+	for (i = 0; i < 10; i++)
 	{
-		printf("%i", i);
-		i++;
+		printf("%d", i);
 	}
-	putchar("\n");
+	printf("\n");
 	return (0);
 }
 
