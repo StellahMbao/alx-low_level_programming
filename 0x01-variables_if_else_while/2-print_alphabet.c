@@ -2,18 +2,18 @@
 #include <stdlib.h>
 
 /**
- *  main -Entry point
- *  Return: 0 
+ * main - Entry point
+ *
+ * Return: 0 success
  */
 int main(void)
 {
-	char alpha = "a";
+	char a;
 
-	while (alpha <= "z")
+	for (a = 97; a <= 122; a++)
 	{
-		putchar(alpha);
-		alpha++;
+		putchar(a);
 	}
-	putchar ("\n");
+	putchar('\n');
 	return (0);
 }
