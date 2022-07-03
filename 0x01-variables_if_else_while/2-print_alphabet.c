@@ -1,7 +1,10 @@
 #include <stdio.h>
-/* main - entry point*/
-/* Return: 0 */
+#include <stdlib.h>
 
+/**
+ *  main -Entry point
+ *  Return: 0 
+ */
 int main(void)
 {
 	char alpha = "a";
