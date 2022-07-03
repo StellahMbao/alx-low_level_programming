@@ -1,19 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
-/* main- entry point*/
-/* Return: 0 */
+/**
+ * main -Entry point
+ *
+ * Return: 0
+ */
+
 
 int main(void)
 {
-	char alpha = "a";
+	char a;
 
-		while (alpha <= "z")
+	for (a = 97; a <= 122; a++)
+	{
+		if (a == 101 || a == 113)
 		{
-		if ((alpha != "q") && (alpha != "e"))
-		{
-			putchar(alpha);
+			continue;
 		}
-		alpha++;
-	putchr("\n");
+		putchar(a);
+	}
+	putchar('\n');
 	return (0);
 }
