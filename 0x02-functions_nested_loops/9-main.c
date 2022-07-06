@@ -1,12 +1,10 @@
 #include "main.h"
-
 /**
  * main - check the code
- *
- * Return: Always 0
+ * Return: 0 always
  */
 int main(void)
 {
-	jack_bauer();
+	times_table();
 	return (0);
 }
