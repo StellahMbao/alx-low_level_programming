@@ -3,10 +3,27 @@
 
 /**
  * print_line - prints line n times
+ * @n: number of times line will be printed
  */
 void print_line(int n)
 {
-	int counter;
+	int counter = 1;
 
-	for (counter = 1; counter <= n; counter++)
+	if (n > 0)
+	{
+		while (counter <= n)
+		{
+			_putchar('_');
+			counter++;
+		}
+		_putchar('\n');
+	}
+	else
+	{
+		_putchar('\n');
+	}
+}
+
+
+
 
