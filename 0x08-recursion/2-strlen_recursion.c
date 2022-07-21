@@ -5,16 +5,14 @@
 /**
  * _strlen_recursion - returns length of a string
  * @s: string
- * Return: len
+ * Return: 0
  */
 int _strlen_recursion(char *s)
 {
-	int length = 0;
-
-	while (*s > 0)
+	if (*s == '\0')
 	{
-		length++;
-		s++;
+		return (0);
 	}
-	return (length);
+	s++;
+	return (1 + _strlen_recursion(s));
 }

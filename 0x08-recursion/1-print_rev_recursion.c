@@ -5,21 +5,14 @@
 /**
  * _print_rev_recursion - prints string in reverse
  * @s: string to print in reverse
+ * Return: 0
  */
 void _print_rev_recursion(char *s)
 {
-	int length = 0;
-	int i;
-
-	while (*s != '\0')
+	if (*s == '\0')
 	{
-		length++;
-		++s;
+		return;
 	}
-	s--;
-	for (i = length; i > 0; i--)
-	{
-		_putchar(*s);
-		s--;
-	}
+	_print_rev_recursion(s + 1);
+	_putchar(*s);
 }
